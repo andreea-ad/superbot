@@ -3,13 +3,15 @@ import os
 
 from movie_picker import MoviePicker
 from joke_teller import JokeTeller
+from bot_logger import BotLogger
 
 cmd_rsp_dict = dict()
 client = discord.Client()
+bot_logger = BotLogger()
 
 @client.event
 async def on_ready():
-  print("SuperBot is logged in as {0.user}.".format(client))
+  bot_logger.info("SuperBot is logged in as {0.user}.".format(client))
   init_commands_responses_dictionary()
 
 @client.event
@@ -40,7 +42,7 @@ async def on_message(message):
         try:
           await client.logout()
         finally:
-          print("SuperBot logged out.")
+          bot_logger.info("SuperBot logged out.")
           return
 
     await message.channel.send(response)
