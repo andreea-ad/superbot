@@ -1,1 +1,4 @@
 discord
+git+https://github.com/ozgur/python-firebase
+IMDbPY
+pyjokes
