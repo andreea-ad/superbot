@@ -4,3 +4,5 @@ IMDbPY
 pyjokes
 mongo
 flask
+pytz
+youtube_dl
