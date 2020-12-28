@@ -2,3 +2,7 @@ discord
 git+https://github.com/ozgur/python-firebase
 IMDbPY
 pyjokes
+mongo
+flask
+pytz
+youtube_dl
