@@ -16,7 +16,7 @@ In order to start your superbot, you need to follow several steps:
 
 2. create a Docker container with the built image
 
-```docker run --env BOT_TOKEN=<your_bot_token> --detach --name <container_name> <image_name>```
+```docker run --env BOT_TOKEN=<your_bot_token> --name <container_name> <image_name>```
 
 **you can replace <container_name> and <image_name> with any names you want** (e.g. docker run -d --name superbot_container superbot_image)
 
